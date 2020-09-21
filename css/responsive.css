@@ -1,0 +1,1187 @@
+/* =========================== extra small devive responsive start ============================ */
+@media (min-width: 320px) and (max-width: 575px) {
+  /* responsive common css start */
+  .title {
+    margin-bottom: 20px;
+  }
+  .title h3 {
+    font-size: 25px;
+    margin-bottom: 5px;
+    padding-bottom: 0;
+  }
+  .title p {
+    font-size: 13px;
+    width: auto;
+  }
+  /* responsive common css end */
+
+  /* =========================== navbar part responsive start ============================ */
+  #menu-bar {
+    padding: 10px 0 !important;
+  }
+  #menu-bar ul {
+    padding-top: 10px;
+    background: rgba(0, 0, 0, 0.8);
+  }
+  #menu-bar ul li {
+    margin-left: 0;
+    text-align: center;
+  }
+  #menu-bar ul li a {
+    padding: 10px 0 !important;
+  }
+  #menu-bar ul li a:hover {
+    background: #fec600;
+    color: #222222;
+  }
+  #menu-bar ul li a:hover::before {
+    width: 0;
+  }
+  #menu-bar ul li .active {
+    background: #fec600;
+    color: #222222;
+  }
+  #menu-bar ul li .active::before {
+    width: 0;
+  }
+  /* =========================== navbar part responsive start ============================ */
+
+  /* =========================== banner part responsive start ============================ */
+  #banner-part .banner-part {
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  }
+  #banner-part .right,
+  #banner-part .left {
+    top: 66%;
+    font-size: 30px;
+  }
+  #banner-part .banner-part .overlay {
+    padding: 125px 0 100px 0;
+  }
+  #banner-part .banner-part .overlay h2 {
+    font-size: 30px;
+  }
+  #banner-part .banner-part .overlay h2 span {
+    font-size: 40px;
+  }
+  #banner-part .banner-part .overlay p {
+    font-size: 13px;
+    width: auto;
+  }
+  #banner-part .banner-part .overlay .banner-btn a {
+    padding: 8px 15px !important;
+  }
+
+  /* =========================== banner part responsive end ============================ */
+
+  /* =========================== about part responsive start ============================ */
+  #about-part .about-items {
+    padding: 0 0 715px 0 !important;
+  }
+  #about-part .about-items .img {
+    width: 280px;
+    height: 280px;
+  }
+  #about-part .about-items .img .overlay {
+    width: 250px;
+    height: 250px;
+  }
+  #about-part .about-items .img img {
+    width: 250px;
+    height: 250px;
+  }
+  #about-part .about-items .img .identity {
+    width: 290px;
+    padding: 15px;
+    bottom: -65%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  #about-part .about-items .img .identity h4 {
+    font-size: 16px;
+    padding-bottom: 5px;
+  }
+  #about-part .about-items .img .identity p {
+    font-size: 13px;
+  }
+  #about-part .about-items .img .identity .triangle {
+    display: none;
+  }
+  #about-part .about-items .img .identity .circle-shape {
+    display: none;
+  }
+  #about-part .about-items .img .bottom {
+    bottom: -130%;
+    transform: translate(-50%, 0);
+  }
+  #about-part .about-items .img .left {
+    bottom: -195% !important;
+  }
+  #about-part .about-items .img .right {
+    bottom: -260% !important;
+  }
+  /* =========================== about part responsive end ============================ */
+
+  /* =========================== port part responsive start ============================ */
+  #port-part {
+    clip-path: polygon(0 2%, 100% 0, 100% 98%, 0% 100%);
+  }
+  #port-part .port-part .overlay {
+    padding: 80px 0;
+  }
+  #port-part .port-part .overlay ul {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  #port-part .port-part .overlay ul li {
+    width: 40%;
+    margin: 0 14px;
+  }
+  #port-part .port-part .overlay ul li .img .overlay i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+  }
+  /* =========================== port part responsive end ============================ */
+
+  /* =========================== service part responsive start ============================ */
+  #service-part {
+    margin-bottom: 0;
+  }
+  #service-part .service-items .line {
+    display: none;
+  }
+  #service-part .service-items .slider-items .service-slider {
+    flex-direction: column;
+    justify-content: start;
+  }
+  #service-part .service-items .slider-items .service-slider .img {
+    margin: 20px 0 !important;
+  }
+  #service-part .service-items .slider-items .service-slider .details {
+    width: auto;
+    text-align: center;
+    padding: 30px 30px;
+  }
+  #service-part
+    .service-items
+    .slider-items
+    .service-slider
+    .details
+    .triangle {
+    display: none;
+  }
+  /* =========================== service part responsive end ============================ */
+
+  /* =========================== testi part responsive start ============================ */
+  #testi-part .testi-part {
+    clip-path: polygon(0 8%, 100% 0, 100% 92%, 0% 100%);
+  }
+  #testi-part .testi-part .overlay {
+    padding: 60px 0 100px 0;
+  }
+  #testi-part .testi-part .overlay .testi-items {
+    flex-direction: column;
+  }
+  #testi-part
+    .testi-part
+    .overlay
+    .testi-items
+    .slider-one
+    .one-items
+    .slick-track {
+    margin: 0;
+  }
+  #testi-part .testi-part .overlay .testi-items .slider-one {
+    width: 234px;
+  }
+  #testi-part
+    .testi-part
+    .overlay
+    .testi-items
+    .slider-one
+    .one-items
+    .slick-slide {
+    width: 234px !important;
+    height: 234px;
+  }
+  #testi-part
+    .testi-part
+    .overlay
+    .testi-items
+    .slider-one
+    .one-items
+    .slick-current {
+    transform: scale(1);
+  }
+  #testi-part
+    .testi-part
+    .overlay
+    .testi-items
+    .slider-one
+    .one-items
+    .img
+    img {
+    width: 60%;
+    top: 15%;
+  }
+  #testi-part .testi-part .overlay .testi-items .slider-one .top,
+  #testi-part .testi-part .overlay .testi-items .slider-one .bottom {
+    top: 50%;
+    left: -17%;
+    transform: translate(0, -50%);
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 20px;
+  }
+  #testi-part .testi-part .overlay .testi-items .slider-one .bottom {
+    left: 102%;
+  }
+  #testi-part .testi-part .overlay .testi-items .slider-two {
+    width: 100%;
+  }
+  #testi-part .testi-part .overlay .testi-items .slider-two .slick-track {
+    padding-left: 0;
+  }
+  #testi-part .testi-part .overlay .testi-items .slider-two .two-items {
+    padding: 15px;
+    text-align: center;
+  }
+  #testi-part
+    .testi-part
+    .overlay
+    .testi-items
+    .slider-two
+    .two-items
+    .triangle,
+  #testi-part .testi-part .overlay .testi-items .slider-one .line-testi {
+    display: none;
+  }
+  #testi-part
+    .testi-part
+    .overlay
+    .testi-items
+    .slider-two
+    .two-items
+    .two-details {
+    padding: 15px 0;
+  }
+  #testi-part
+    .testi-part
+    .overlay
+    .testi-items
+    .slider-two
+    .two-items
+    .signature {
+    bottom: 12px;
+    right: 25px;
+  }
+  /* =========================== testi part responsive end ============================ */
+
+  /* =========================== price part responsive start ============================ */
+  #price-part .price-item {
+    margin-bottom: 30px;
+  }
+
+  /* =========================== price part responsive end ============================ */
+
+  /* =========================== counter part responsive start ============================ */
+  #counter-part {
+    transform: skewY(-5deg);
+  }
+  #counter-part .overlay .counter-item {
+    width: 130px;
+    padding: 10px;
+    margin: 20px auto;
+  }
+  #counter-part .overlay .counter-item p {
+    font-size: 14px;
+  }
+  #counter-part .overlay .counter-item p span {
+    font-size: 20px;
+  }
+  /* =========================== counter part responsive end ============================ */
+
+  /* =========================== team part responsive start ============================ */
+  #team-part {
+    height: 525px;
+  }
+  #team-part .slick-slider {
+    width: 300px;
+    margin: 0 auto;
+  }
+  /* =========================== team part responsive end ============================ */
+
+  /* =========================== partner part responsive start ============================ */
+  #partner-part {
+    transform: skewY(-5deg);
+  }
+  #partner-part .partner-item {
+    width: 250px;
+    margin: 20px auto;
+  }
+  #partner-part .partner-item .img {
+    width: 100%;
+  }
+  /* =========================== partner part responsive end ============================ */
+
+  /* =========================== footer part responsive start ============================ */
+  #footer-part .logo {
+    transform: skewY(-5deg);
+  }
+  #footer-part .logo img {
+    transform: skewY(5deg);
+  }
+  #footer-part .footer-item {
+    padding-top: 100px;
+  }
+  #footer-part .footer-item .contact {
+    margin: 20px 0;
+  }
+  #footer-part .footer-item .contact::before {
+    width: 0;
+  }
+  #footer-part .footer-item .follow {
+    margin-top: 20px;
+  }
+  #footer-part .footer-item .follow i {
+    margin: 30px 5px;
+  }
+
+  /* =========================== footer part responsive end ============================ */
+}
+/* =========================== extra small devive responsive end ============================ */
+
+/* =========================== small devive responsive start ============================ */
+@media (min-width: 576px) and (max-width: 767px) {
+  /* responsive common css start */
+  .title {
+    margin-bottom: 40px;
+  }
+  .title h3 {
+    font-size: 25px;
+    margin-bottom: 5px;
+    padding-bottom: 0;
+  }
+  /* responsive common css end */
+
+  /* =========================== navbar part responsive start ============================ */
+  #menu-bar {
+    padding: 10px 0 !important;
+  }
+  #menu-bar ul {
+    padding-top: 10px;
+    background: rgba(0, 0, 0, 0.8);
+  }
+  #menu-bar ul li {
+    margin-left: 0;
+    text-align: center;
+  }
+  #menu-bar ul li a {
+    padding: 10px 0 !important;
+  }
+  #menu-bar ul li a:hover {
+    background: #fec600;
+    color: #222222;
+  }
+  #menu-bar ul li a:hover::before {
+    width: 0;
+  }
+  #menu-bar ul li .active {
+    background: #fec600;
+    color: #222222;
+  }
+  #menu-bar ul li .active::before {
+    width: 0;
+  }
+  /* =========================== navbar part responsive start ============================ */
+
+  /* =========================== banner part responsive start ============================ */
+  #banner-part .banner-part {
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  }
+  #banner-part .right,
+  #banner-part .left {
+    top: 66%;
+    font-size: 30px;
+  }
+  #banner-part .banner-part .overlay {
+    padding: 125px 0 100px 0;
+  }
+  #banner-part .banner-part .overlay h2 {
+    font-size: 30px;
+  }
+  #banner-part .banner-part .overlay h2 span {
+    font-size: 40px;
+  }
+  #banner-part .banner-part .overlay p {
+    font-size: 13px;
+    width: auto;
+  }
+  #banner-part .banner-part .overlay .banner-btn a {
+    padding: 8px 15px !important;
+  }
+
+  /* =========================== banner part responsive end ============================ */
+
+  /* =========================== about part responsive start ============================ */
+  #about-part .about-items {
+    padding: 0 0 910px 0 !important;
+  }
+  #about-part .about-items .img {
+    width: 400px;
+    height: 400px;
+  }
+  #about-part .about-items .img .overlay {
+    width: 360px;
+    height: 360px;
+  }
+  #about-part .about-items .img img {
+    width: 360px;
+    height: 360px;
+  }
+  #about-part .about-items .img .identity {
+    width: 100%;
+    bottom: -65%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  #about-part .about-items .img .identity .triangle {
+    display: none;
+  }
+  #about-part .about-items .img .identity .circle-shape {
+    display: none;
+  }
+  #about-part .about-items .img .bottom {
+    bottom: -120%;
+    transform: translate(-50%, 0);
+  }
+  #about-part .about-items .img .left {
+    bottom: -175% !important;
+  }
+  #about-part .about-items .img .right {
+    bottom: -230% !important;
+  }
+  /* =========================== about part responsive end ============================ */
+
+  /* =========================== port part responsive start ============================ */
+  #port-part {
+    clip-path: polygon(0 2%, 100% 0, 100% 98%, 0% 100%);
+  }
+  #port-part .port-part .overlay {
+    padding: 80px 0;
+  }
+  #port-part .port-part .overlay ul {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  #port-part .port-part .overlay ul li {
+    width: 44%;
+    margin: 0 14px;
+  }
+  #port-part .port-part .overlay ul li .img .overlay i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+  }
+  /* =========================== port part responsive end ============================ */
+
+  /* =========================== service part responsive start ============================ */
+  #service-part {
+    margin-bottom: 0;
+  }
+  #service-part .service-items .line {
+    display: none;
+  }
+  #service-part .service-items .slider-items .service-slider {
+    flex-direction: column;
+    justify-content: start;
+  }
+  #service-part .service-items .slider-items .top,
+  #service-part .service-items .slider-items .bottom {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 20px;
+  }
+  #service-part .service-items .slider-items .service-slider .img {
+    margin: 20px 0 !important;
+  }
+  #service-part .service-items .slider-items .service-slider .details {
+    width: auto;
+    text-align: center;
+    padding: 30px 30px;
+  }
+  #service-part
+    .service-items
+    .slider-items
+    .service-slider
+    .details
+    .triangle {
+    display: none;
+  }
+  /* =========================== service part responsive end ============================ */
+
+  /* =========================== testi part responsive start ============================ */
+  #testi-part .testi-part {
+    clip-path: polygon(0 8%, 100% 0, 100% 92%, 0% 100%);
+  }
+  #testi-part .testi-part .overlay {
+    padding: 60px 0 100px 0;
+  }
+  #testi-part .testi-part .overlay .testi-items {
+    flex-direction: column;
+  }
+  #testi-part
+    .testi-part
+    .overlay
+    .testi-items
+    .slider-one
+    .one-items
+    .slick-track {
+    margin: 0;
+  }
+  #testi-part .testi-part .overlay .testi-items .slider-one {
+    width: 234px;
+  }
+  #testi-part
+    .testi-part
+    .overlay
+    .testi-items
+    .slider-one
+    .one-items
+    .slick-slide {
+    width: 234px !important;
+    height: 234px;
+  }
+  #testi-part
+    .testi-part
+    .overlay
+    .testi-items
+    .slider-one
+    .one-items
+    .slick-current {
+    transform: scale(1);
+  }
+  #testi-part
+    .testi-part
+    .overlay
+    .testi-items
+    .slider-one
+    .one-items
+    .img
+    img {
+    width: 60%;
+    top: 15%;
+  }
+  #testi-part .testi-part .overlay .testi-items .slider-one .top,
+  #testi-part .testi-part .overlay .testi-items .slider-one .bottom {
+    top: 50%;
+    left: -40%;
+    transform: translate(0, -50%);
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 20px;
+  }
+  #testi-part .testi-part .overlay .testi-items .slider-one .bottom {
+    left: 125%;
+  }
+  #testi-part .testi-part .overlay .testi-items .slider-two {
+    width: 100%;
+  }
+  #testi-part .testi-part .overlay .testi-items .slider-two .slick-track {
+    padding-left: 0;
+  }
+  #testi-part .testi-part .overlay .testi-items .slider-two .two-items {
+    padding: 15px;
+    text-align: center;
+  }
+  #testi-part
+    .testi-part
+    .overlay
+    .testi-items
+    .slider-two
+    .two-items
+    .triangle,
+  #testi-part .testi-part .overlay .testi-items .slider-one .line-testi {
+    display: none;
+  }
+  #testi-part
+    .testi-part
+    .overlay
+    .testi-items
+    .slider-two
+    .two-items
+    .two-details {
+    padding: 15px 0;
+  }
+  #testi-part
+    .testi-part
+    .overlay
+    .testi-items
+    .slider-two
+    .two-items
+    .signature {
+    bottom: 12px;
+    right: 25px;
+  }
+  /* =========================== testi part responsive end ============================ */
+
+  /* =========================== price part responsive start ============================ */
+  #price-part .price-item {
+    margin-bottom: 30px;
+  }
+
+  /* =========================== price part responsive end ============================ */
+
+  /* =========================== counter part responsive start ============================ */
+  #counter-part {
+    transform: skewY(-5deg);
+  }
+  #counter-part .overlay .counter-item {
+    width: 155px;
+    padding: 10px;
+    margin: 20px auto;
+  }
+  #counter-part .overlay .counter-item p {
+    font-size: 14px;
+  }
+  #counter-part .overlay .counter-item p span {
+    font-size: 20px;
+  }
+  /* =========================== counter part responsive end ============================ */
+
+  /* =========================== team part responsive start ============================ */
+  #team-part {
+    height: 525px;
+  }
+  #team-part .slick-slider {
+    width: 500px;
+    margin: 0 auto;
+  }
+  /* =========================== team part responsive end ============================ */
+
+  /* =========================== partner part responsive start ============================ */
+  #partner-part {
+    transform: skewY(-5deg);
+  }
+  #partner-part .partner-item {
+    width: 225px;
+    margin: 20px auto;
+  }
+  #partner-part .partner-item .img {
+    width: 100%;
+  }
+  /* =========================== partner part responsive end ============================ */
+
+  /* =========================== footer part responsive start ============================ */
+  #footer-part .logo {
+    transform: skewY(-5deg);
+  }
+  #footer-part .logo img {
+    transform: skewY(5deg);
+  }
+  #footer-part .footer-item {
+    padding-top: 100px;
+  }
+  #footer-part .footer-item .contact {
+    margin: 20px 0;
+  }
+  #footer-part .footer-item .contact::before {
+    width: 0;
+  }
+  #footer-part .footer-item .follow {
+    margin-top: 20px;
+  }
+  #footer-part .footer-item .follow i {
+    margin: 30px 5px;
+  }
+
+  /* =========================== footer part responsive end ============================ */
+}
+/* =========================== small devive responsive end ============================ */
+
+/* =========================== medium devive responsive start ============================ */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* responsive common css start */
+  .title {
+    margin-bottom: 40px;
+  }
+  .title h3 {
+    font-size: 25px;
+    margin-bottom: 5px;
+    padding-bottom: 0;
+  }
+  /* responsive common css end */
+
+  /* =========================== navbar part responsive start ============================ */
+  #menu-bar {
+    padding: 10px 0 !important;
+  }
+  #menu-bar ul {
+    padding-top: 10px;
+    background: rgba(0, 0, 0, 0.8);
+  }
+  #menu-bar ul li {
+    margin-left: 0;
+    text-align: center;
+  }
+  #menu-bar ul li a {
+    padding: 10px 0 !important;
+  }
+  #menu-bar ul li a:hover {
+    background: #fec600;
+    color: #222222;
+  }
+  #menu-bar ul li a:hover::before {
+    width: 0;
+  }
+  #menu-bar ul li .active {
+    background: #fec600;
+    color: #222222;
+  }
+  #menu-bar ul li .active::before {
+    width: 0;
+  }
+  /* =========================== navbar part responsive start ============================ */
+
+  /* =========================== banner part responsive start ============================ */
+
+  #banner-part .right,
+  #banner-part .left {
+    font-size: 30px;
+  }
+  #banner-part .banner-part .overlay {
+    padding: 180px 0 140px 0;
+  }
+
+  /* =========================== banner part responsive end ============================ */
+
+  /* =========================== about part responsive start ============================ */
+  #about-part .about-items {
+    padding: 0 0 825px 0 !important;
+  }
+  #about-part .about-items .img {
+    width: 400px;
+    height: 400px;
+  }
+  #about-part .about-items .img .overlay {
+    width: 360px;
+    height: 360px;
+  }
+  #about-part .about-items .img img {
+    width: 360px;
+    height: 360px;
+  }
+  #about-part .about-items .img .identity {
+    width: 100%;
+    bottom: -48%;
+    left: 6%;
+    transform: translate(-50%, 0);
+  }
+  #about-part .about-items .img .identity .triangle {
+    display: none;
+  }
+  #about-part .about-items .img .identity .circle-shape {
+    display: none;
+  }
+  #about-part .about-items .img .bottom {
+    bottom: -100%;
+    left: 94%;
+    transform: translate(-50%, 0);
+  }
+  #about-part .about-items .img .left {
+    bottom: -153% !important;
+  }
+  #about-part .about-items .img .right {
+    bottom: -205% !important;
+    left: 94%;
+  }
+  /* =========================== about part responsive end ============================ */
+
+  /* =========================== port part responsive start ============================ */
+  #port-part {
+    clip-path: polygon(0 2%, 100% 0, 100% 98%, 0% 100%);
+  }
+  #port-part .port-part .overlay {
+    padding: 80px 0;
+  }
+  #port-part .port-part .overlay ul {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  #port-part .port-part .overlay ul li {
+    width: 45.5%;
+    margin: 0 14px;
+  }
+  /* =========================== port part responsive end ============================ */
+
+  /* =========================== service part responsive start ============================ */
+  #service-part {
+    margin-bottom: 0;
+  }
+  #service-part .service-items .line {
+    display: none;
+  }
+  #service-part .service-items .slider-items .service-slider {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 0;
+  }
+  #service-part .service-items .slider-items .top,
+  #service-part .service-items .slider-items .bottom {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 20px;
+  }
+  #service-part .service-items .slider-items .service-slider .img {
+    margin: 20px 0 !important;
+  }
+  #service-part .service-items .slider-items .service-slider .details {
+    width: 400px;
+    text-align: center;
+    padding: 20px;
+  }
+  #service-part
+    .service-items
+    .slider-items
+    .service-slider
+    .details
+    .triangle {
+    display: block;
+  }
+  #service-part .service-items .slider-items .tow .details .triangle {
+    left: 0;
+  }
+  #service-part
+    .service-items
+    .slider-items
+    .tow.slick-current
+    .details
+    .triangle {
+    -webkit-box-shadow: -3px 3px 6px -1px rgba(0, 0, 0, 0.29);
+    box-shadow: -3px 3px 6px -1px rgba(0, 0, 0, 0.29);
+  }
+  /* =========================== service part responsive end ============================ */
+
+  /* =========================== testi part responsive start ============================ */
+  #testi-part .title {
+    margin-bottom: 40px;
+  }
+  #testi-part .testi-part {
+    clip-path: polygon(0 8%, 100% 0, 100% 92%, 0% 100%);
+  }
+  #testi-part .testi-part .overlay {
+    padding: 60px 0 100px 0;
+  }
+  #testi-part .testi-part .overlay .testi-items {
+    flex-direction: column;
+  }
+  #testi-part .testi-part .overlay .testi-items .slider-one .one-items {
+    width: 80%;
+    margin: 0 auto;
+  }
+  #testi-part
+    .testi-part
+    .overlay
+    .testi-items
+    .slider-one
+    .one-items
+    .slick-track {
+    margin: 0;
+  }
+  #testi-part .testi-part .overlay .testi-items .slider-one {
+    width: 100%;
+  }
+  #testi-part .testi-part .overlay .testi-items .slider-one .one-items .img {
+    margin: 50px 20px;
+  }
+  #testi-part
+    .testi-part
+    .overlay
+    .testi-items
+    .slider-one
+    .one-items
+    .slick-slide {
+    width: 144px !important;
+    height: 144px;
+  }
+
+  #testi-part
+    .testi-part
+    .overlay
+    .testi-items
+    .slider-one
+    .one-items
+    .img
+    img {
+    width: 60%;
+    top: 15%;
+  }
+  #testi-part .testi-part .overlay .testi-items .slider-one .top,
+  #testi-part .testi-part .overlay .testi-items .slider-one .bottom {
+    top: 50%;
+    left: -10%;
+    transform: translate(0, -50%);
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 20px;
+  }
+  #testi-part .testi-part .overlay .testi-items .slider-one .bottom {
+    left: 104%;
+  }
+  #testi-part .testi-part .overlay .testi-items .slider-two {
+    width: 100%;
+  }
+  #testi-part .testi-part .overlay .testi-items .slider-two .slick-track {
+    padding-left: 0;
+  }
+  #testi-part .testi-part .overlay .testi-items .slider-two .two-items {
+    padding: 15px;
+    text-align: center;
+  }
+  #testi-part
+    .testi-part
+    .overlay
+    .testi-items
+    .slider-two
+    .two-items
+    .triangle,
+  #testi-part .testi-part .overlay .testi-items .slider-one .line-testi {
+    display: none;
+  }
+  #testi-part
+    .testi-part
+    .overlay
+    .testi-items
+    .slider-two
+    .two-items
+    .two-details {
+    padding: 15px 0;
+  }
+  #testi-part
+    .testi-part
+    .overlay
+    .testi-items
+    .slider-two
+    .two-items
+    .signature {
+    bottom: 12px;
+    right: 25px;
+  }
+  /* =========================== testi part responsive end ============================ */
+
+  /* =========================== price part responsive start ============================ */
+  #price-part .price-item {
+    margin-bottom: 30px;
+  }
+
+  /* =========================== price part responsive end ============================ */
+
+  /* =========================== counter part responsive start ============================ */
+  #counter-part {
+    transform: skewY(-5deg);
+  }
+  #counter-part .overlay .counter-item {
+    margin: 20px auto;
+  }
+  /* =========================== counter part responsive end ============================ */
+
+  /* =========================== team part responsive start ============================ */
+  #team-part {
+    height: 600px;
+  }
+  #team-part .slick-slider {
+    width: 100%;
+    margin: 0 auto;
+  }
+  /* =========================== team part responsive end ============================ */
+
+  /* =========================== partner part responsive start ============================ */
+  #partner-part {
+    transform: skewY(-5deg);
+  }
+  #partner-part .partner-item {
+    width: 225px;
+    margin: 20px auto;
+  }
+  #partner-part .partner-item .img {
+    width: 100%;
+  }
+  /* =========================== partner part responsive end ============================ */
+
+  /* =========================== footer part responsive start ============================ */
+  #footer-part .logo {
+    transform: skewY(-5deg);
+  }
+  #footer-part .logo img {
+    transform: skewY(5deg);
+  }
+  #footer-part .footer-item {
+    padding-top: 100px;
+  }
+  #footer-part .footer-item .contact {
+    margin: 20px 0;
+  }
+  #footer-part .footer-item .contact::before {
+    width: 0;
+  }
+  #footer-part .footer-item .follow {
+    margin-top: 20px;
+  }
+  #footer-part .footer-item .follow i {
+    margin: 30px 5px;
+  }
+
+  /* =========================== footer part responsive end ============================ */
+}
+/* =========================== medium devive responsive end ============================ */
+
+/* =========================== large devive responsive start ============================ */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* =========================== banner part responsive start ============================ */
+
+  #banner-part .right,
+  #banner-part .left {
+    font-size: 30px;
+  }
+
+  /* =========================== banner part responsive end ============================ */
+
+  /* =========================== about part responsive start ============================ */
+
+  #about-part .about-items .img {
+    width: 290px;
+    height: 290px;
+  }
+  #about-part .about-items .img .overlay {
+    width: 260px;
+    height: 260px;
+  }
+  #about-part .about-items .img img {
+    width: 260px;
+    height: 260px;
+  }
+  #about-part .about-items .img .identity {
+    width: 100%;
+    bottom: 113%;
+    padding: 15px;
+  }
+
+  #about-part .about-items .img .bottom {
+    bottom: -56.7% !important;
+  }
+  #about-part .about-items .img .left {
+    bottom: 50% !important;
+    left: -60%;
+  }
+  #about-part .about-items .img .right .circle-shape {
+    left: -106%;
+  }
+  #about-part .about-items .img .right {
+    bottom: 50% !important;
+    left: 63.5%;
+  }
+  #about-part .about-items .img .right .circle-shape {
+    left: -13%;
+  }
+
+  /* =========================== about part responsive end ============================ */
+
+  /* =========================== port part responsive start ============================ */
+
+  /* =========================== port part responsive end ============================ */
+
+  /* =========================== service part responsive start ============================ */
+  #service-part {
+    margin-bottom: 40px;
+  }
+  #service-part .service-items .slider-items .service-slider .details {
+    width: 390px;
+    padding: 40px 20px;
+  }
+  #service-part .service-items .slider-items .service-slider .img {
+    margin: 0 40px;
+  }
+  #testi-part .testi-part .overlay .testi-items .slider-one {
+    width: 22%;
+  }
+  #testi-part .testi-part .overlay .testi-items .slider-two {
+    width: 78%;
+  }
+  #testi-part .testi-part .overlay .testi-items .slider-two .two-items {
+    padding: 30px 60px 30px 30px;
+  }
+  /* =========================== service part responsive end ============================ */
+
+  /* =========================== counter part responsive start ============================ */
+  #counter-part .overlay .counter-item {
+    width: 155px;
+  }
+  #counter-part .overlay .counter-item p {
+    font-size: 14px;
+  }
+  #counter-part .overlay .counter-item p span {
+    font-size: 25px;
+  }
+  /* =========================== counter part responsive end ============================ */
+
+  /* =========================== team part responsive start ============================ */
+  #team-part {
+    height: 530px;
+  }
+  #team-part .team-item .text {
+    padding: 5px;
+  }
+  #team-part .team-item .text .icon {
+    top: 83%;
+  }
+  #team-part .team-item .text .icon i {
+    margin: 0 2px;
+  }
+  /* =========================== team part responsive end ============================ */
+
+  /* =========================== partner part responsive start ============================ */
+  #partner-part {
+    transform: skewY(-5deg);
+  }
+  #partner-part .partner-item {
+    width: 155px;
+  }
+  #partner-part .partner-item .img {
+    width: 100%;
+  }
+  /* =========================== partner part responsive end ============================ */
+
+  /* =========================== footer part responsive start ============================ */
+  #footer-part .logo {
+    transform: skewY(-5deg);
+  }
+  #footer-part .logo img {
+    transform: skewY(5deg);
+  }
+  #footer-part .footer-item {
+    padding-top: 130px;
+  }
+  #footer-part .footer-item .contact {
+    margin: 20px 0;
+  }
+  #footer-part .footer-item .contact .contact-text p {
+    font-size: 14px;
+  }
+  #footer-part .footer-item .follow {
+    margin-top: 20px;
+  }
+  #footer-part .footer-item .follow i {
+    margin: 30px 5px;
+  }
+
+  /* =========================== footer part responsive end ============================ */
+}
+/* =========================== large devive responsive end ============================ */

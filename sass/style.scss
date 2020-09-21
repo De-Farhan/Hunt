@@ -1,0 +1,1209 @@
+
+@import "_variable.scss";
+
+// ============================ common css start ================================
+* {
+  margin: 0;
+  padding: 0;
+}
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+ol,
+ul {
+  list-style: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+.title {
+  margin-bottom: 60px;
+  text-align: center;
+  h3 {
+    font-family: $font-raleway;
+    font-size: 35px;
+    font-weight: 500;
+    color: $h-black;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+  }
+  p {
+    font-family: $font-open-sans;
+    font-size: $p-size-14;
+    font-weight: 500;
+    color: $p-black;
+    line-height: 24px;
+    width: 575px;
+    margin: 0 auto;
+  }
+}
+// ============================ common css end ================================
+
+// ===========================navbar part css start ===============================
+#menu-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  width: 100%;
+  background: transparent;
+  padding: 30px 0 !important;
+  border-bottom: 1px solid #fec600;
+  button {
+    &:focus {
+      outline: none;
+    }
+    i {
+      color: #fec600;
+      cursor: pointer;
+    }
+  }
+  .navbar-brand {
+    padding: 0;
+    margin: 0;
+  }
+  ul {
+    li {
+      margin-left: 30px;
+      a {
+        font-family: $font-raleway;
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        padding: 0 !important;
+        text-transform: capitalize;
+        transition: all linear 0.4s;
+        position: relative;
+        &:hover {
+          color: #fec600;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: -45px;
+          left: 0;
+          width: 0%;
+          height: 3px;
+          background: #fec600;
+          transition: linear 0.4s;
+        }
+        &:hover::before {
+          width: 100%;
+        }
+      }
+      .active {
+        color: #fec600;
+        &::before {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+.fixed-navbar {
+  width: 100% !important;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8) !important;
+  animation: menu-ani linear 0.6s;
+}
+
+@keyframes menu-ani {
+  from {
+    top: -50px;
+  }
+  to {
+    top: 0;
+  }
+}
+
+// ===========================navbar part css end ===============================
+
+// ===========================banner part css start ===============================
+#banner-part {
+  .right {
+    font-size: 40px;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    transition: all linear 0.4s;
+    &:hover {
+      color: #fec600;
+    }
+  }
+  .left {
+    font-size: 40px;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    transition: all linear 0.4s;
+    &:hover {
+      color: #fec600;
+    }
+  }
+  .banner-part {
+    background: url(../images/banner-img.png) no-repeat center;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+    &:focus {
+      outline: none;
+    }
+    .overlay {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 245px 0 180px 0;
+      text-align: center;
+      h2 {
+        font-family: $font-raleway;
+        font-size: 36px;
+        font-weight: 400;
+        color: #ffffff;
+        text-transform: capitalize;
+        span {
+          display: block;
+          font-size: 55px;
+          font-weight: bold;
+          color: #fec600;
+          text-transform: uppercase;
+        }
+      }
+      p {
+        font-family: $font-open-sans;
+        font-size: 14px;
+        font-weight: 400;
+        color: $p-white;
+        line-height: 24px;
+        padding: 30px 0 60px 0;
+        width: 540px;
+        margin: 0 auto;
+      }
+      .banner-btn {
+        a {
+          display: inline-block;
+          font-family: $font-raleway;
+          font-size: 16px;
+          font-weight: 400;
+          color: #ffffff;
+          background: transparent;
+          text-transform: uppercase;
+          padding: 12px 15px;
+          margin-left: 10px;
+          box-sizing: border-box;
+          border: 1px solid #ffffff;
+          transition: all linear 0.4s;
+          &:hover {
+            background: #fec600;
+            border: 1px solid transparent;
+            color: #111111;
+          }
+        }
+      }
+    }
+  }
+  .img2 {
+    background: url(../images/banner-img2.jpg) no-repeat center;
+    background-size: cover;
+  }
+  .img3 {
+    background: url(../images/banner-img3.jpg) no-repeat center;
+    background-size: cover;
+  }
+}
+// ===========================banner part css end ===============================
+
+// ===========================about part css start ===============================
+#about-part {
+  padding-top: $section-m;
+  .about-items {
+    padding: 240px 0;
+    .img {
+      width: 370px;
+      height: 370px;
+      border-radius: 50%;
+      border: 2px solid #444444;
+      margin: 0 auto;
+      position: relative;
+
+      img {
+        width: 320px;
+        height: 320px;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 320px;
+        height: 320px;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.3);
+      }
+      .identity {
+        position: absolute;
+        bottom: 110%;
+        left: 0;
+        width: 370px;
+        background: #eeeeee;
+        padding: 30px;
+        box-sizing: border-box;
+        text-align: center;
+        transition: all linear 0.4s;
+        &:hover {
+          -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
+          -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
+        }
+        &:hover .circle-shape {
+          background: #fec600;
+        }
+        &:hover .triangle {
+          -webkit-box-shadow: -3px -3px 5px -2px rgba(0, 0, 0, 0.3);
+          -moz-box-shadow: -3px -3px 5px -2px rgba(0, 0, 0, 0.3);
+          box-shadow: -3px -3px 5px -2px rgba(0, 0, 0, 0.3);
+        }
+        h4 {
+          font-family: $font-raleway;
+          font-size: 18px;
+          font-weight: 500;
+          color: $h-black;
+          text-transform: uppercase;
+          padding-bottom: 20px;
+        }
+        p {
+          font-family: $font-open-sans;
+          font-size: $p-size-14;
+          font-weight: 500;
+          color: $p-black;
+          line-height: 24px;
+        }
+        .triangle {
+          width: 30px;
+          height: 30px;
+          background: inherit;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translate(-50%, 50%) rotate(225deg);
+          border-bottom-right-radius: 7px;
+          transition: all linear 0.4s;
+        }
+        .circle-shape {
+          position: absolute;
+          bottom: -36px;
+          left: 50%;
+          transform: translate(-50%, 50%);
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background: #444444;
+          transition: all linear 0.4s;
+        }
+      }
+      .bottom {
+        bottom: -50%;
+        left: 50%;
+        transform: translate(-50%, 25%);
+        &:hover {
+          -webkit-box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.3);
+          -moz-box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.3);
+        }
+        .triangle {
+          top: 0;
+          transform: translate(-50%, -50%) rotate(45deg);
+        }
+        .circle-shape {
+          top: -36px;
+          transform: translate(-50%, -50%);
+        }
+      }
+      .left {
+        bottom: 50%;
+        left: -60%;
+        transform: translate(-50%, 50%);
+        &:hover .triangle {
+          -webkit-box-shadow: 3px -3px 5px -2px rgba(0, 0, 0, 0.3);
+          -moz-box-shadow: 3px -3px 5px -2px rgba(0, 0, 0, 0.3);
+          box-shadow: 3px -3px 5px -2px rgba(0, 0, 0, 0.3);
+        }
+        .triangle {
+          top: 50%;
+          left: 100%;
+          transform: translate(-50%, -50%) rotate(45deg);
+        }
+        .circle-shape {
+          bottom: 50%;
+          left: 104%;
+          transform: translate(50%, 50%);
+        }
+      }
+      .right {
+        bottom: 50%;
+        left: 60%;
+        transform: translate(50%, 50%);
+        &:hover .triangle {
+          -webkit-box-shadow: -3px 3px 5px -2px rgba(0, 0, 0, 0.3);
+          -moz-box-shadow: -3px 3px 5px -2px rgba(0, 0, 0, 0.3);
+          box-shadow: -3px 3px 5px -2px rgba(0, 0, 0, 0.3);
+        }
+        .triangle {
+          top: 50%;
+          left: 0%;
+          transform: translate(-50%, -50%) rotate(45deg);
+        }
+        .circle-shape {
+          bottom: 50%;
+          left: -10%;
+          transform: translate(-50%, 50%);
+        }
+      }
+    }
+  }
+}
+// ===========================about part css end ===============================
+
+// =========================== portfolio part css start ===============================
+#port-part {
+  margin-top: $section-m;
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+  .port-part {
+    background: url(../images/portfolio-img.jpg) no-repeat center;
+    background-size: cover;
+    .overlay {
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 150px 0;
+      .title {
+        h3 {
+          color: #ffffff;
+        }
+        p {
+          color: #ffffff;
+        }
+      }
+      ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+          width: 23%;
+          .img {
+            width: 100%;
+            height: auto;
+            position: relative;
+            margin-bottom: 30px;
+            &:hover .overlay {
+              opacity: 1;
+            }
+            img {
+              width: 100%;
+              height: 100%;
+            }
+            .overlay {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: rgba(0, 0, 0, 0.3);
+              opacity: 0;
+              transition: all linear 0.4s;
+              i {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                line-height: 40px;
+                text-align: center;
+                font-size: 18px;
+                background: #ffffff;
+                color: #444444;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// =========================== portfolio part css end ===============================
+
+// =========================== service part css start ===============================
+#service-part {
+  padding-top: $section-m;
+  margin-bottom: 100px;
+  .service-items {
+    margin-top: 80px;
+    position: relative;
+    .slider-items {
+      .top {
+        position: absolute;
+        top: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-size: 25px;
+        color: #111111;
+        background: transparent;
+        border: 1px solid #111111;
+        text-align: center;
+        line-height: 40px;
+        transition: all linear 0.4s;
+        &:hover {
+          background: #fec600;
+          border: 1px solid transparent;
+        }
+      }
+      .bottom {
+        position: absolute;
+        bottom: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-size: 25px;
+        color: #111111;
+        background: transparent;
+        border: 1px solid #111111;
+        text-align: center;
+        line-height: 40px;
+        transition: all linear 0.4s;
+        &:hover {
+          background: #fec600;
+          border: 1px solid transparent;
+        }
+      }
+      .service-slider {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 30px 0;
+        &:focus {
+          outline: none;
+        }
+        h4 {
+          font-family: $font-raleway;
+          font-size: 18px;
+          font-weight: 500;
+          color: $h-black;
+          text-transform: uppercase;
+        }
+        .img {
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          background: #eeeeee;
+          position: relative;
+          margin: 0 70px;
+          transition: all linear 0.4s;
+          img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60%;
+          }
+        }
+        .details {
+          width: 450px;
+          background: #eeeeee;
+          padding: 50px 30px;
+          box-sizing: border-box;
+          position: relative;
+          transition: all linear 0.4s;
+          p {
+            font-family: $font-open-sans;
+            font-size: $p-size-14;
+            font-weight: 400;
+            color: $p-black;
+            line-height: 24px;
+          }
+          .triangle {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(-50%, -50%) rotate(45deg);
+            width: 30px;
+            height: 30px;
+            background: inherit;
+            border-bottom-left-radius: 7px;
+            transition: all linear 0.4s;
+          }
+        }
+      }
+      .service-slider.slick-current {
+        .img {
+          transform: scale(1.3);
+          background: #fec600;
+        }
+        .details {
+          -webkit-box-shadow: -2px 0px 6px 3px rgba(0, 0, 0, 0.29);
+          -moz-box-shadow: -2px 0px 6px 3px rgba(0, 0, 0, 0.29);
+          box-shadow: -2px 0px 6px 3px rgba(0, 0, 0, 0.29);
+          .triangle {
+            -webkit-box-shadow: -6px 6px 6px -1px rgba(0, 0, 0, 0.29);
+            -moz-box-shadow: -6px 6px 6px -1px rgba(0, 0, 0, 0.29);
+            box-shadow: -6px 6px 6px -1px rgba(0, 0, 0, 0.29);
+          }
+        }
+      }
+      .tow {
+        flex-direction: row-reverse;
+        .details {
+          .triangle {
+            left: 100%;
+            border-top-right-radius: 7px;
+          }
+        }
+      }
+      .tow.slick-current {
+        .details {
+          -webkit-box-shadow: 2px 0px 6px 3px rgba(0, 0, 0, 0.29);
+          -moz-box-shadow: 2px 0px 6px 3px rgba(0, 0, 0, 0.29);
+          box-shadow: 2px 0px 6px 3px rgba(0, 0, 0, 0.29);
+          .triangle {
+            -webkit-box-shadow: 6px -6px 6px -1px rgba(0, 0, 0, 0.29);
+            -moz-box-shadow: 6px -6px 6px -1px rgba(0, 0, 0, 0.29);
+            box-shadow: 6px -6px 6px -1px rgba(0, 0, 0, 0.29);
+          }
+        }
+      }
+    }
+    .line {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1px;
+      height: 100%;
+      z-index: -1;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+// =========================== service part css end ===============================
+
+// =========================== testi part css start ===============================
+#testi-part {
+  padding-top: $section-m;
+  .title {
+    margin-bottom: 0;
+  }
+  .testi-part {
+    background: url(../images/service2-img.jpg) no-repeat center;
+    background-size: cover;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+    .overlay {
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 200px 0;
+      .testi-items {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .slider-one {
+          width: 18%;
+          position: relative;
+          z-index: 1;
+          .top {
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 25px;
+            color: #ffffff;
+            background: transparent;
+            border: 1px solid #ffffff;
+            text-align: center;
+            line-height: 40px;
+            transition: all linear 0.4s;
+            &:hover {
+              border: 1px solid transparent;
+              background: #fec600;
+              color: #111111;
+            }
+          }
+          .bottom {
+            position: absolute;
+            bottom: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 25px;
+            color: #ffffff;
+            background: transparent;
+            border: 1px solid #ffffff;
+            text-align: center;
+            line-height: 40px;
+            transition: all linear 0.4s;
+            &:hover {
+              border: 1px solid transparent;
+              background: #fec600;
+              color: #111111;
+            }
+          }
+          .one-items {
+            width: 100%;
+            .slick-track {
+              margin: 0 39px;
+            }
+            .img {
+              width: 100px;
+              height: 100px;
+              border-radius: 50%;
+              background: #eeeeee;
+              overflow: hidden;
+              position: relative;
+              margin: 30px 0;
+              transition: all linear 0.4s;
+              &:focus {
+                outline: none;
+              }
+              img {
+                width: auto;
+                height: auto;
+                position: absolute;
+                top: 10%;
+                left: 50%;
+                transform: translate(-50%, 0);
+              }
+              .testi-img-overlay {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.6);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+              }
+            }
+            .slick-slide {
+              width: 120px !important;
+              height: 120px;
+            }
+            .slick-current {
+              background: #fec600;
+              transform: scale(1.3);
+              .testi-img-overlay {
+                opacity: 0;
+              }
+            }
+          }
+          .line-testi {
+            width: 1px;
+            height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+        .slider-two {
+          width: 80%;
+          .slick-track {
+            padding-left: 25px;
+          }
+          .two-items {
+            width: 100%;
+            padding: 60px 60px 60px 30px;
+            background: #f1f1f1;
+            position: relative;
+            &:focus {
+              outline: none;
+            }
+            h3 {
+              font-family: $font-raleway;
+              font-size: 20px;
+              font-weight: 500;
+              color: $h-black;
+              text-transform: capitalize;
+            }
+            .stars {
+              i {
+                font-size: 14px;
+                color: #fec600;
+              }
+            }
+            .designation {
+              font-family: $font-raleway;
+              font-size: 16px;
+              font-weight: 400;
+              color: $p-black;
+              text-transform: capitalize;
+            }
+            .two-details {
+              font-family: $font-open-sans;
+              font-size: 14px;
+              font-weight: 400;
+              color: $p-black;
+              line-height: 24px;
+              padding: 30px 0;
+            }
+            .quote {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 30%;
+            }
+            .signature {
+              position: absolute;
+              bottom: 50px;
+              right: 40px;
+            }
+            .triangle {
+              width: 40px;
+              height: 40px;
+              background: inherit;
+              position: absolute;
+              top: 50%;
+              left: 0;
+              transform: translate(-50%, -50%) rotate(45deg);
+              border-bottom-left-radius: 7px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// =========================== testi part css end ===============================
+
+// =========================== pricing part css start ===============================
+#price-part {
+  padding-top: $section-m;
+  .price-item {
+    text-align: center;
+    background: #444444;
+    padding: 25px 0;
+    transition: all linear 0.4s;
+    &:hover {
+      background: #fec600;
+      -webkit-box-shadow: 0px 2px 9px 5px rgba(0, 0, 0, 0.4);
+      -moz-box-shadow: 0px 2px 9px 5px rgba(0, 0, 0, 0.4);
+      box-shadow: 0px 2px 9px 5px rgba(0, 0, 0, 0.4);
+    }
+    &:hover h3 {
+      color: #444444;
+    }
+    &:hover ul .circle-p {
+      border: 1px solid #fec600;
+    }
+    &:hover ul .circle-p .circle-c {
+      background: #fec600;
+    }
+    &:hover ul .circle-c p {
+      color: #444444;
+    }
+    &:hover a {
+      color: #444444;
+    }
+    h3 {
+      font-family: $font-raleway;
+      font-size: 20px;
+      font-weight: 500;
+      color: $h-white;
+      text-transform: uppercase;
+      transition: all linear 0.4s;
+    }
+    ul {
+      width: 100%;
+      padding-top: 70px;
+      padding-bottom: 10px;
+      margin: 80px 0 25px 0;
+      background: #f1f1f1;
+      transform: skewY(-5deg);
+      position: relative;
+      li {
+        font-family: $font-open-sans;
+        font-size: 14px;
+        font-weight: 400;
+        color: $p-black;
+        text-transform: capitalize;
+        margin-bottom: 25px;
+        transform: skewY(5deg);
+      }
+      .circle-p {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 1px solid #444444;
+        background: #f1f1f1;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%) skewY(5deg);
+        transition: all linear 0.4s;
+        .circle-c {
+          width: 90px;
+          height: 90px;
+          border-radius: 50%;
+          background: #444444;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          transition: all linear 0.4s;
+          p {
+            font-family: $font-raleway;
+            font-size: 30px;
+            font-weight: 400;
+            color: $p-white;
+            text-transform: capitalize;
+            margin-top: 10px;
+            transition: all linear 0.4s;
+            span {
+              display: block;
+              font-size: 14px;
+              color: $p-white;
+              margin-top: -6px;
+            }
+          }
+        }
+      }
+    }
+    a {
+      font-family: $font-raleway;
+      font-size: 20px;
+      font-weight: 500;
+      color: $h-white;
+      text-transform: uppercase;
+      transition: all linear 0.4s;
+    }
+  }
+}
+// =========================== pricing part css end ===============================
+
+// =========================== counter part css start ===============================
+#counter-part {
+  margin-top: $section-top-m;
+  margin-bottom: 100px;
+  background: url(../images/portfolio-img.jpg) no-repeat center;
+  background-size: cover;
+  transform: skewY(-2deg);
+  .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px 0;
+    .counter-item {
+      width: 190px;
+      border: 1px solid #ffffff;
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: center;
+      transform: skewX(-5deg);
+      p {
+        span {
+          display: block;
+          font-size: 30px;
+        }
+        font-family: $font-raleway;
+        font-size: 18px;
+        font-weight: 500;
+        color: $p-white;
+        text-transform: capitalize;
+        transform: skewX(5deg);
+      }
+    }
+  }
+}
+// =========================== counter part css end ===============================
+
+// =========================== team part css start ===============================
+#team-part {
+  width: 100%;
+  height: 600px;
+  margin-top: $section-m;
+  .team-item {
+    border: 1px solid #f1f1f1;
+    transition: all linear 0.4s;
+    &:hover .img .team-img-overlay {
+      opacity: 1;
+    }
+    &:hover .text {
+      padding-bottom: 70px;
+    }
+    &:hover .text .icon {
+      opacity: 1;
+    }
+    .img {
+      width: 100%;
+      height: auto;
+      background: #f1f1f1;
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      .team-img-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(254, 198, 0, 0.5);
+        opacity: 0;
+        transition: all linear 0.4s;
+        i {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background: #f1f1f1;
+          color: #444444;
+          font-size: 18px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          line-height: 40px;
+        }
+      }
+    }
+    .text {
+      padding: 30px;
+      box-sizing: border-box;
+      text-align: center;
+      transition: all linear 0.4s;
+      h4 {
+        font-family: $font-raleway;
+        font-size: 20px;
+        font-weight: 500;
+        color: $h-black;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+      }
+      h5 {
+        font-family: $font-raleway;
+        font-size: 16px;
+        font-weight: 400;
+        color: $h-black;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+      }
+      .icon {
+        width: 100%;
+        position: absolute;
+        top: 88%;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: all linear 0.4s;
+        i {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background: transparent;
+          color: #444444;
+          font-size: 18px;
+          text-align: center;
+          line-height: 40px;
+          border: 1px solid #444444;
+          margin: 0 5px;
+          transition: all linear 0.4s;
+          &:hover {
+            background: #fec600;
+            border: 1px solid transparent;
+          }
+        }
+      }
+    }
+  }
+}
+// =========================== team part css end ===============================
+
+// =========================== partner part css start ===============================
+#partner-part {
+  margin-top: $section-m;
+  padding: 30px 0;
+  background: #f1f1f1;
+  transform: skewY(-2deg);
+  .partner-item {
+    .img {
+      width: 190px;
+      height: auto;
+      border: 1px solid #444444;
+      padding: 30px 10px;
+      box-sizing: border-box;
+      transform: skewX(-5deg);
+      transition: all linear 0.4s;
+      &:hover {
+        border: 1px solid #fec600;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        transform: skewX(5deg);
+      }
+    }
+  }
+}
+// =========================== partner part css end ===============================
+
+// =========================== back-top css start ===============================
+.back-top {
+  display: none;
+  i {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    color: #353535;
+    background: #fec600;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid transparent;
+    transition: all linear 0.4s;
+    &:hover {
+      border: 1px solid #fec600;
+      background: transparent;
+      color: #fec600;
+    }
+  }
+}
+.fixed-back-top {
+  display: block;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99999;
+}
+// =========================== back-top css end ===============================
+// =========================== footer part css start ===============================
+#footer-part {
+  text-align: center;
+  .logo {
+    padding: 30px 0;
+    border-bottom: 1px solid #ffffff;
+    background: #222222;
+    transform: skewY(-2deg);
+    img {
+    }
+  }
+  .footer-item {
+    background: #222222;
+    margin-top: -100px;
+    padding-top: 140px;
+    .contact {
+      position: relative;
+      i {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-size: 18px;
+        color: #353535;
+        background: #fec600;
+        text-align: center;
+        line-height: 40px;
+        margin-bottom: 20px;
+      }
+      .contact-text {
+        p {
+          font-family: $font-raleway;
+          font-weight: 500;
+          font-size: 16px;
+          color: $p-white;
+          text-transform: capitalize;
+        }
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -17px;
+        background: #ffffff;
+        width: 1px;
+        height: 100%;
+      }
+    }
+    .first-c {
+      &::before {
+        width: 0;
+      }
+    }
+    .follow {
+      margin-top: 50px;
+      h3 {
+        font-family: $font-raleway;
+        font-size: 20px;
+        font-weight: 500;
+        color: $h-white;
+        text-transform: uppercase;
+      }
+      i {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-size: 18px;
+        color: #444444;
+        background: #f1f1f1;
+        text-align: center;
+        line-height: 40px;
+        margin: 30px 10px;
+        box-sizing: border-box;
+        transition: all linear 0.4s;
+        &:hover {
+          background: #fec600;
+        }
+      }
+    }
+  }
+  .copyright {
+    p {
+      font-family: $font-open-sans;
+      font-weight: 400;
+      font-size: 14px;
+      color: $p-white;
+      background: #444444;
+      padding: 20px 0;
+      span {
+        color: #fec600;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+// =========================== footer part css end ===============================
